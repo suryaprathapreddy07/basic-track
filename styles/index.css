@@ -1,0 +1,36 @@
+:root{
+    --color-orange:#f7a212;
+    --color-white:#fff;
+    --color-yellow:#ffc601;
+    --color-blue:#253dc0;
+    --color-light:#e1e1e1;
+    --fweight-regular:400;
+    --fweight-bold:700;
+    --fw-extrabold:800;
+}
+
+html{
+    font-family: sans-serif;
+    line-height: 1;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: var(--fweight-regular);
+    /* font-family: 'Mulish', sans-serif !important; */
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    /* border: 5px solid black; */
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    /* display: inline-block; */
+}

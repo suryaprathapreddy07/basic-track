@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 0.7rem 15px;
+    box-sizing: border-box;
+}
+
+.nav-items{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.nav-item{
+   text-transform: capitalize;
+   padding: 5px 10px;
+   display: blick;
+   font-weight: var(--fweight-regular);
+   color: #141414; 
+   font-size: 0.9rem;
+}
