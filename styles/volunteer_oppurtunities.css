@@ -1,0 +1,42 @@
+.volunteer-oppurtunities{
+    padding: 100px 0;
+}
+
+.volunteer-oppurtunities-content,.volunteer-oppurtunities-navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.volunteer-oppurtunities-content h1{
+    color: var(--color-black);
+    font-size: 2.5rem;
+    font-weight: var(--fweight-regular);
+}
+.volunteer-oppurtunities-content>p{
+    font-size: 1.3rem;
+    font-weight: var(--fweight-regular);
+    color: var(--color-black);
+    font-display: 'mulish';
+}
+
+.bg-highlighted{
+    background: url('../assets/heading-bg.svg');
+    background-size: cover;
+    padding: 0 36px;
+    margin-left: -20px;
+    color: #fff;
+    font-weight: var(--fweight-bold);
+
+}
+.carousel-arrows i{
+    color: var(--color-light);
+    font-size: 2.2rem;
+    padding: 5px;
+}
+
+.volunteer-oppurtunities-navigation{
+    padding-top:2rem ;
+
+}

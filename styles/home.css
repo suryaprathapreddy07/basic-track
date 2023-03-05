@@ -5,7 +5,7 @@
  width: 100%;
 }
 .grid-container{
-    width: 70%;
+    width: 80%;
     height:auto;
     margin: auto    ;
 
@@ -64,3 +64,7 @@
     font-size: 1rem;
     /* font-family: sans-serif !important; */
 }
+
+/* .home-section-image img{
+    overflow: clip;
+} */

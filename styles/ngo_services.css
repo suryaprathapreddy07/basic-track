@@ -1,0 +1,37 @@
+.ngo-services{
+    width: 100%;
+    border: 1px solid var(--color-orange);
+    padding-top: 1rem;
+    background: url("../assets/ngolooking-bg.svg");
+}
+.ngo-services-grid-container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.ngo-services-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.ngo-services-content h1{
+    color: var(--color-blue);
+}   
+.ngo-services-content span{
+    font-size: 3rem !important;
+    color: var(--color-orange);
+}
+
+
+.ngo-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 1.5rem; */
+}
+.ngo-message>p{
+font-size: 1.3rem;
+}

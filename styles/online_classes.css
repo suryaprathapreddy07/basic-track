@@ -1,0 +1,31 @@
+.online-classes{
+    width: 100%;
+    border: 1px solid var(--color-black);
+    padding: 0;
+}
+.online-classes-grid-container{
+    padding: 50px 30px;
+    margin: 1rem;
+    background:#0ecedd url("../assets/passionguru.svg");
+}
+
+.online-classes-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.online-classes-content h1{
+    color: #fff;
+    font-weight: var(--fweight-bold );
+}
+
+.online-classes-content p{
+    font-size: 1.8rem;
+}
+
+.navigation-btn-light{
+    background-color: #f2f2f2;
+    color: #302f2f;
+    font-size: 1.5rem;
+}
