@@ -14,6 +14,7 @@
     font-size: 2.2rem;
 }
 
+
 .media-coverage-heading::after,.media-coverage-heading::before{
 content: "";
 width: 50%;
@@ -27,6 +28,7 @@ text-align: center;
     width: 70%;
     margin: 0 auto;
     background-color: #f5f5f5;
+    /* border: 1px solid black; */
 }
 .media-coverage2-content-image{
     border-right: 1px solid var(--color-light);
@@ -45,6 +47,8 @@ text-align: center;
     font-size: 1.8rem;
 }
 
+
+
 .media-coverage2-navigation{
     width: 100%;
     display: flex;
@@ -53,7 +57,17 @@ text-align: center;
     font-size: 3rem !important;
     color: var(--color-orange);
     margin-top: 10px;
+    
 }
+.prev,.next{
+    cursor: pointer;
+}
+
+
+
+
+
+
 
 @media screen and (max-width:768px) {
     .media-coverage2-content-info h1{

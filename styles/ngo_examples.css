@@ -28,6 +28,9 @@
         font-size: 1.8rem;
         text-align: center;
     }
+    .ngo-examples-images{
+        justify-content: center;
+    }
 
     
 }

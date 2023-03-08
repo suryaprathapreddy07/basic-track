@@ -27,6 +27,12 @@
       src="https://kit.fontawesome.com/31d9b469bb.js"
       crossorigin="anonymous"
     ></script>
+    <!-- including swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!-- Including style sheets -->
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/navbar.css" />
@@ -44,10 +50,16 @@
     <!-- Following semantics -->
     <!-- navbar -->
     <nav id="navbar">
-      <i class="fa-solid fa-bars bars"></i>
+
+      <div id="nav-icon1" class="bars">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="logo">
         <img src="./assets/logo.png" alt="Qause_logo" class="img img-fluid" />
       </div>
+
       <div class="partial-search-bar hidden">
         <input type="text" />
         <div class="partial-search-bar-input-icon">
@@ -159,10 +171,6 @@
           </p>
         </div>
         <div class="volunteer-oppurtunities-navigation col-12">
-          <!-- <div class="carousel-arrows">
-            <i class="fa-solid fa-circle-arrow-left"></i>
-            <i class="fa-solid fa-circle-arrow-right"></i>
-          </div> -->
           <button class="navigation-btn">
             Explore All <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
           </button>
@@ -263,36 +271,126 @@
       <section class="media-coverage2">
         <div class="media-coverage2-grid-container row">
           <div class="media-coverage2-header col-12">
-            <!-- <div class=""></div> -->
             <h1 class="media-coverage-heading">Media Coverage</h1>
-            <!-- <div class=""></div> -->
           </div>
-          <div class="media-coverage2-content col-12 row">
-            <div class="media-coverage2-content-image col-md-6 col-12">
-              <img
-                src="./assets/media-coverage2.jpg"
-                alt="media coverage image"
-                class="img img-fluid"
-              />
+
+          <!-- content -->
+          <div class="swiper media-coverage2-content col-12">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="media-coverage2-content-image col-md-6 col-12">
+                    <img
+                      src="./assets/media-coverage2.jpg"
+                      alt="media coverage image"
+                      class="img img-fluid"
+                    />
+                  </div>
+                  <div class="media-coverage2-content-info col-md-6 col-12">
+                    <h1>
+                      Creating a Generaiton of Limitless Curious Minds <br />
+                      8th March, 2021
+                    </h1>
+                    <hr />
+                    <p>
+                      Qause aims to bridge that fap by hand-holding and
+                      providing them phone assistance in their refional language
+                      to bring their presence online and enable them to take
+                      donations online as well.
+                    </p>
+                    <span class="coloured">Read Full Article</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="media-coverage2-content-image col-md-6 col-12">
+                    <img
+                      src="./assets/media-creating-eco-system.jpg"
+                      alt="media coverage image"
+                      class="img img-fluid"
+                    />
+                  </div>
+                  <div class="media-coverage2-content-info col-md-6 col-12">
+                    <h1>
+                      Creating an ecosystem to nurture the talent of
+                      underprivilaged kids <br />
+                      30th June, 2020
+                    </h1>
+                    <hr />
+                    <p>
+                      “A nationwide project that aims to nurture the unexplored
+                      talents of these young kids. It has talent-focused online
+                      video classes for underprivileged kids. The classes have
+                      mentoring sessions for singing, dancing, taekwondo, and
+                      other art forms.
+                    </p>
+                    <span class="coloured">Read Full Article</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="media-coverage2-content-image col-md-6 col-12">
+                    <img
+                      src="./assets/media-higher-education.jpg"
+                      alt="media coverage image"
+                      class="img img-fluid"
+                    />
+                  </div>
+                  <div class="media-coverage2-content-info col-md-6 col-12">
+                    <h1>
+                      An Entrepreneur’s Passion of Accelerating a Social Change
+                      Through Technology <br />20th September, 2020
+                    </h1>
+                    <hr />
+                    <p>
+                      Idea is to bridge the gap between donors and NGOs, to
+                      build a community which has its foundations on
+                      aspirations, positivity, and compassion and bring the
+                      passion back into learning for less-fortunate kids with
+                      our initiative PassionGuru.
+                    </p>
+                    <span class="coloured">Read Full Article</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="row">
+                  <div class="media-coverage2-content-image col-md-6 col-12">
+                    <img
+                      src="./assets/media-4nov-2020.jpg"
+                      alt="media coverage image"
+                      class="img img-fluid"
+                    />
+                  </div>
+                  <div class="media-coverage2-content-info col-md-6 col-12">
+                    <h1>
+                      There’s only one thing more colorful than art. Their
+                      dreams. PassionGuru is here to give wings to their dreams.
+                      <br />4th November, 2020
+                    </h1>
+                    <hr />
+                    <p>
+                      Every evening between 4-6 pm, up to a 1000 children around
+                      the country in various orphanages, shelter homes and slum
+                      clusters gather around small screens and pay rapt
+                      attention to the day's lesson in dance, theatre, taekwondo
+                      and other art forms.
+                    </p>
+                    <span class="coloured">Read Full Article</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="media-coverage2-content-info col-md-6 col-12">
-              <h1>
-                Creating a Generaiton of Limitless Curious Minds <br />
-                8th March, 2021
-              </h1>
-              <hr />
-              <p>
-                Qause aims to bridge that fap by hand-holding and providing them
-                phone assistance in their refional language to bring their
-                presence online and enable them to take donations online as
-                well.
-              </p>
-              <span class="coloured">Read Full Article</span>
-            </div>
+
           </div>
+
           <div class="media-coverage2-navigation col-12">
-            <span><i class="fa-solid fa-chevron-left"></i></span>
-            <span><i class="fa-solid fa-chevron-right"></i></span>
+            <span><i class="fa-solid fa-chevron-left prev"></i></span>
+            <span><i class="fa-solid fa-chevron-right next"></i></span>
           </div>
         </div>
       </section>
@@ -636,7 +734,7 @@
       <div class="footer-wrapper">
         <div class="footer-image">
           <img
-          class="img img-fluid"
+            class="img img-fluid"
             src="./assets/footer-children-img.png"
             alt="footer children image"
           />
@@ -676,32 +774,25 @@
             </div>
           </div>
           <div class="footer-content-info col-md-4 col-12">
-            
-
-                <img
-                src="./assets/footer-logo.png"
-                alt="footer logo"
-                class="img img-fluid "
-              />
-              <p class="">
-                Qause aims to strengthen the social sector by providing a
-                digital experience to non profits volunteers and donors. Our
-                vision is to give digital experience to nonprofits to help them
-                access ample volunteer talent and raise funds for their causes.
-                We serve with passion!
-              </p>
-              <p class="copyrights">
-                <i class="fa-solid fa-copyright"></i>2022 - Qause India
-              </p>
-
-              
-          
+            <img
+              src="./assets/footer-logo.png"
+              alt="footer logo"
+              class="img img-fluid"
+            />
+            <p class="">
+              Qause aims to strengthen the social sector by providing a digital
+              experience to non profits volunteers and donors. Our vision is to
+              give digital experience to nonprofits to help them access ample
+              volunteer talent and raise funds for their causes. We serve with
+              passion!
+            </p>
+            <p class="copyrights">
+              <i class="fa-solid fa-copyright"></i>2022 - Qause India
+            </p>
           </div>
         </div>
       </div>
     </footer>
-
-    <script src="./index.js"></script>
 
     <!-- Including bootstrap script -->
     <script
@@ -709,5 +800,10 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <!-- including swiper script -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="swiper.js"></script> -->
+    <script src="./index.js"></script>
   </body>
 </html>
