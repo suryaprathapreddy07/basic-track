@@ -35,3 +35,43 @@
 .ngo-message>p{
 font-size: 1.3rem;
 }
+
+@media screen and (max-width:768px) {
+    .ngo-services-grid-container{
+        max-width: 576px;
+        margin: 0 auto;
+    }
+
+    .ngo-services-content{
+        align-items: center;
+        gap:0;
+    }
+
+    .ngo-services-content h1{
+        font-size: 1.8rem;
+    }
+    .ngo-services-image-content{
+        align-items: center;
+    }
+    .ngo-services-image-content img{
+        height: 280px;
+        width: 200px;
+        margin: 0 auto;
+    }
+    .ngo-message p{
+        font-size: 0.8rem;
+        text-align: center;
+        margin:0;
+    }
+    .coloured {
+        font-size: 12px !important;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    .ngo-services-content{
+        text-align: center;
+    }
+    
+}

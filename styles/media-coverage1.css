@@ -49,3 +49,22 @@
     justify-content: flex-end;
     align-items: center;
 }
+
+@media screen and (max-width:768px) {
+    .media-coverage1-content h1{
+        font-size:1.5rem;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    .media-coverage1-content{
+        align-items: center;
+        text-align: center;
+    }
+    .media-coverage1-image{
+        margin-top: 2rem;
+        align-items: center;
+    }
+    
+}

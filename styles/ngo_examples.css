@@ -22,3 +22,12 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (max-width:768px) {
+    .ngo-examples-content{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    
+}

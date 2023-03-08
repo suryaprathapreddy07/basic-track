@@ -36,9 +36,8 @@
     border-radius: 2rem;
     display: flex;
     width: 100%;
+    margin-bottom: 1rem;
     
-
-
 }
 .home-section-content-input>input{
     width: 90%;
@@ -65,6 +64,24 @@
     /* font-family: sans-serif !important; */
 }
 
-/* .home-section-image img{
-    overflow: clip;
-} */
+@media  screen and (max-width:768px) {
+    .home-section-content{
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+
+    .home-section-content-header{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .home-section-content-text{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .grid-container{
+        padding-top: 100px;
+    }
+
+}

@@ -50,7 +50,16 @@ section{
 }
 
 .coloured{
-    color: var(--color-orange);
+    color: var(--color-orange) !important;
     font-size: 1rem !important;
     font-weight: var(--fweight-regular);
 }
+
+ul{
+    list-style: none;
+}
+
+.hidden{
+    display: none !important;
+}
+

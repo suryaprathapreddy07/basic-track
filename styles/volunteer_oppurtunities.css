@@ -8,6 +8,7 @@
     align-items: center;
     flex-direction: column;
     gap: 1.5rem;
+    padding: 0 15px;
 }
 .volunteer-oppurtunities-content h1{
     color: var(--color-black);
@@ -39,4 +40,21 @@
 .volunteer-oppurtunities-navigation{
     padding-top:2rem ;
 
+}
+
+@media screen and (max-width:768px) {
+    .volunteer-oppurtunities-content h1{
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .volunteer-oppurtunities-content p{
+        font-size: 18px;
+        text-align: center;
+    }
+    .volunteer-oppurtunities-content{
+        max-width: 576px;
+        margin: 0 auto;
+    }
+    
 }

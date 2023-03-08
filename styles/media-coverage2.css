@@ -1,7 +1,7 @@
 .media-coverage2-grid-container{
     width: 100%;
     margin: 0;
-    padding: 0;
+    /* padding-bottom:100px ; */
 }
 
 .media-coverage-heading{
@@ -53,4 +53,25 @@ text-align: center;
     font-size: 3rem !important;
     color: var(--color-orange);
     margin-top: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .media-coverage2-content-info h1{
+        font-size: 1.5rem;
+    }
+    .media-coverage2-content-info p{
+        font-size:0.8rem ;
+    }
+
+    .media-coverage2-content-info{
+        padding: 1rem;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .media-coverage2-content{
+        width: 90%;
+    }
+    
 }

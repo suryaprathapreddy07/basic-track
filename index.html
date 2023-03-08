@@ -36,14 +36,23 @@
     <link rel="stylesheet" href="./styles/ngo_services.css" />
     <link rel="stylesheet" href="./styles/media-coverage1.css" />
     <link rel="stylesheet" href="./styles/online_classes.css" />
-    <link rel="stylesheet" href="./styles/media-coverage2.css">
+    <link rel="stylesheet" href="./styles/media-coverage2.css" />
+    <link rel="stylesheet" href="./styles/blogs.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
   </head>
   <body>
     <!-- Following semantics -->
     <!-- navbar -->
-    <nav>
+    <nav id="navbar">
+      <i class="fa-solid fa-bars bars"></i>
       <div class="logo">
         <img src="./assets/logo.png" alt="Qause_logo" class="img img-fluid" />
+      </div>
+      <div class="partial-search-bar hidden">
+        <input type="text" />
+        <div class="partial-search-bar-input-icon">
+          <span><i class="fa-solid fa-magnifying-glass"></i>Search</span>
+        </div>
       </div>
       <ul class="nav-items">
         <li class="nav-item">Home</li>
@@ -53,14 +62,28 @@
         <li class="nav-item">Log In</li>
         <li class="nav-item">Signup</li>
       </ul>
+      <span class="coloured signup-btn">Sign Up</span>
     </nav>
+    <div class="responsive-navbar hidden">
+      <div class="responsive-navbar-overlay"></div>
+      <div class="responsive-navbar-sidebar">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Blogs</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Volunteer Now</a></li>
+          <li><a href="">Log In</a></li>
+          <li><a href="">Signup</a></li>
+        </ul>
+      </div>
+    </div>
 
     <!-- Main  -->
     <main>
       <!-- section 1 -->
       <section class="home-section">
         <div class="row grid-container">
-          <div class="home-section-content col-7">
+          <div class="home-section-content col-md-7 col-12">
             <p class="home-section-content-header">
               A Platform Where Non-Profits Grow Digitally
             </p>
@@ -76,7 +99,7 @@
               </div>
             </div>
           </div>
-          <div class="home-section-image col-5">
+          <div class="home-section-image col-md-5 col-12">
             <img
               src="./assets/header-banner.jpg"
               alt="girl"
@@ -89,10 +112,10 @@
       <!-- section 2 -->
       <section class="ngo-examples">
         <div class="ngo-examples-grid-container row">
-          <div class="ngo-examples-content col-4">
+          <div class="ngo-examples-content col-md-4 col-12">
             <p>2138+ NGOs trust us with their needs</p>
           </div>
-          <div class="ngo-examples-images col-8">
+          <div class="ngo-examples-images col-md-8 col-12">
             <img
               src="./assets//ngocount-logo2.png"
               class="img img-fluid"
@@ -136,10 +159,10 @@
           </p>
         </div>
         <div class="volunteer-oppurtunities-navigation col-12">
-          <div class="carousel-arrows">
+          <!-- <div class="carousel-arrows">
             <i class="fa-solid fa-circle-arrow-left"></i>
             <i class="fa-solid fa-circle-arrow-right"></i>
-          </div>
+          </div> -->
           <button class="navigation-btn">
             Explore All <i class="fa-sharp fa-solid fa-arrow-right-long"></i>
           </button>
@@ -149,7 +172,7 @@
       <!-- section 4 -->
       <section class="ngo-services">
         <div class="ngo-services-grid-container row">
-          <div class="ngo-services-content col-5">
+          <div class="ngo-services-content col-md-5 col-12">
             <h1>Are you an NGO looking for</h1>
             <span class="coloured">a writer?</span>
             <div class="ngo-services-navigation">
@@ -159,13 +182,13 @@
               </button>
             </div>
           </div>
-          <div class="ngo-services-image-content col-7 row">
+          <div class="ngo-services-image-content col-md-7 col-12 row">
             <img
               src="./assets/ngolooking-img.png"
               alt="ngoWomen"
-              class="img img-fluid col-5"
+              class="img img-fluid col-md-5 col-12"
             />
-            <div class="ngo-message col-7">
+            <div class="ngo-message col-md-7 col-12">
               <p>
                 "I have never felt so empowered to be a part of something bigger
                 than myself. Qause is the ideal social enterprise to find a
@@ -182,7 +205,7 @@
       <!-- section 5 -->
       <section class="media-coverage1">
         <div class="media-coverage1-grid-container row">
-          <div class="media-coverage1-content col-4">
+          <div class="media-coverage1-content col-sm-5 col-12">
             <h1>Over 2138 NGOs got their custom domain on Qause for FREE!</h1>
             <div class="media-coverage1-input">
               <input
@@ -201,7 +224,7 @@
               </button>
             </div>
           </div>
-          <div class="media-coverage1-image col-8">
+          <div class="media-coverage1-image col-sm-7 col-12">
             <img
               src="./assets/qause-custom-domain.png"
               alt="custom domain"
@@ -214,7 +237,7 @@
       <!-- section 6 -->
       <section class="online-classes">
         <div class="online-classes-grid-container row">
-          <div class="online-classes-content col-7">
+          <div class="online-classes-content col-sm-7 col-12">
             <h1>
               Giving free online classes to help the less fortunate kids
               discover their passion.
@@ -226,7 +249,7 @@
               </button>
             </div>
           </div>
-          <div class="online-classes-image col-5">
+          <div class="online-classes-image col-sm-5 col-12">
             <img
               src="./assets/passionguru-videoimg.svg"
               alt="online classes image"
@@ -239,19 +262,31 @@
       <!-- section 7 -->
       <section class="media-coverage2">
         <div class="media-coverage2-grid-container row">
-          <div class="media-coverage2-header col-12 ">
+          <div class="media-coverage2-header col-12">
             <!-- <div class=""></div> -->
             <h1 class="media-coverage-heading">Media Coverage</h1>
             <!-- <div class=""></div> -->
           </div>
           <div class="media-coverage2-content col-12 row">
-            <div class="media-coverage2-content-image col-6">
-              <img src="./assets/media-coverage2.jpg" alt="media coverage image" class="img img-fluid">
+            <div class="media-coverage2-content-image col-md-6 col-12">
+              <img
+                src="./assets/media-coverage2.jpg"
+                alt="media coverage image"
+                class="img img-fluid"
+              />
             </div>
-            <div class="media-coverage2-content-info col-6">
-              <h1>Creating a Generaiton of Limitless Curious Minds <br> 8th March, 2021</h1>
-              <hr>
-              <p>Qause aims to bridge that fap by hand-holding and providing them phone assistance in their refional language to bring their presence online and enable them to take donations online as well.</p>
+            <div class="media-coverage2-content-info col-md-6 col-12">
+              <h1>
+                Creating a Generaiton of Limitless Curious Minds <br />
+                8th March, 2021
+              </h1>
+              <hr />
+              <p>
+                Qause aims to bridge that fap by hand-holding and providing them
+                phone assistance in their refional language to bring their
+                presence online and enable them to take donations online as
+                well.
+              </p>
               <span class="coloured">Read Full Article</span>
             </div>
           </div>
@@ -263,11 +298,410 @@
       </section>
 
       <!-- section 8 -->
-      <section class="blog">
-        <div class="blog-grid-container">
+      <!-- <section class="blog">
+        <div class="container-fluid blog-grid-container">
+          <div class="blog-header">
+            <h1>Blog</h1>
+          </div>
+          <div class="blog-items">
+            <div class="blog-item">
+              <div class="blog-item-image">
+                <img
+                  src="./assets//pexels-parij-photography-3070333-1-1024x683.jpg"
+                  alt="blog image"
+                  class="img img-fluid"
+                />
+              </div>
+              <div class="blog-item-content">
+                <h3>
+                  Interview Questions for volunteers and how to answer them.
+                </h3>
+                <div class="blog-item-details">
+                  <div class="blog-item-details-date">
+                    <span
+                      ><i class="fa-solid fa-calendar-check"></i> September 7,
+                      2022</span
+                    >
+                  </div>
+                  <div class="blog-item-details-tags">
+                    <span>Tags</span>
+                    <span>People</span>
+                    <span>Qause</span>
+                    <span>NGO</span>
+                  </div>
+                </div>
+                <p class="blog-item-message">
+                  Interviewing for a volunteering position is essential for both
+                  parties. It enables more clarity about passion, interests, and
+                  skills that candidates may provide to the organization or
+                  receive from it. This guide will take you through these
+                  essentials. 1. Why do you want to volunteer at an NGO? Your
+                  answer ...
+                </p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="blog-item-image">
+                <img
+                  src="./assets//pexels-parij-photography-3070333-1-1024x683.jpg"
+                  alt="blog image"
+                  class="img img-fluid"
+                />
+              </div>
+              <div class="blog-item-content">
+                <h3>
+                  Interview Questions for volunteers and how to answer them.
+                </h3>
+                <div class="blog-item-details">
+                  <div class="blog-item-details-date">
+                    <span
+                      ><i class="fa-solid fa-calendar-check"></i> September 7,
+                      2022</span
+                    >
+                  </div>
+                  <div class="blog-item-details-tags">
+                    <span>Tags</span>
+                    <span>People</span>
+                    <span>Qause</span>
+                    <span>NGO</span>
+                  </div>
+                </div>
+                <p class="blog-item-message">
+                  Interviewing for a volunteering position is essential for both
+                  parties. It enables more clarity about passion, interests, and
+                  skills that candidates may provide to the organization or
+                  receive from it. This guide will take you through these
+                  essentials. 1. Why do you want to volunteer at an NGO? Your
+                  answer ...
+                </p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="blog-item-image">
+                <img
+                  src="./assets/pexels-liza-summer-6348129-683x1024.jpg"
+                  alt="blog image"
+                  class="img img-fluid"
+                />
+              </div>
+              <div class="blog-item-content">
+                <h3>
+                  Interview Questions for volunteers and how to answer them.
+                </h3>
+                <div class="blog-item-details">
+                  <div class="blog-item-details-date">
+                    <span
+                      ><i class="fa-solid fa-calendar-check"></i> September 7,
+                      2022</span
+                    >
+                  </div>
+                  <div class="blog-item-details-tags">
+                    <span>Tags</span>
+                    <span>People</span>
+                    <span>Qause</span>
+                    <span>NGO</span>
+                  </div>
+                </div>
+                <p class="blog-item-message">
+                  Interviewing for a volunteering position is essential for both
+                  parties. It enables more clarity about passion, interests, and
+                  skills that candidates may provide to the organization or
+                  receive from it. This guide will take you through these
+                  essentials. 1. Why do you want to volunteer at an NGO? Your
+                  answer ...
+                </p>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="blog-item-image">
+                <img
+                  src="./assets/pexels-dmitry-zvolskiy-2062433-2-1024x683.jpg"
+                  alt="blog image"
+                  class="img img-fluid"
+                />
+              </div>
+              <div class="blog-item-content">
+                <h3>
+                  Interview Questions for volunteers and how to answer them.
+                </h3>
+                <div class="blog-item-details">
+                  <div class="blog-item-details-date">
+                    <span
+                      ><i class="fa-solid fa-calendar-check"></i> September 7,
+                      2022</span
+                    >
+                  </div>
+                  <div class="blog-item-details-tags">
+                    <span>Tags</span>
+                    <span>People</span>
+                    <span>Qause</span>
+                    <span>NGO</span>
+                  </div>
+                </div>
+                <p class="blog-item-message">
+                  Interviewing for a volunteering position is essential for both
+                  parties. It enables more clarity about passion, interests, and
+                  skills that candidates may provide to the organization or
+                  receive from it. This guide will take you through these
+                  essentials. 1. Why do you want to volunteer at an NGO? Your
+                  answer ...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="blog-navigation">
+            <div class="carousel-arrows">
+              <i class="fa-solid fa-circle-arrow-left arrow-left"></i>
+              <i class="fa-solid fa-circle-arrow-right"></i>
+            </div>
+          </div>
         </div>
-      </section>
+      </section> -->
+
+      <!-- section 8 -->
+      <!-- <section class="blog">
+        <div class="blog-grid-container row">
+          <div class="blog-header col-12">
+            <h1>Blog</h1>
+          </div>
+          <div class="blog-items col-12">
+            <div class="blog-item">
+              <div class="blog-item-image">
+                <img
+                  src="./assets//pexels-liza-summer-6348129-683x1024.jpg"
+                  alt="volunteer"
+                  class="img img-fluid"
+                />
+              </div>
+              <div class="blog-item-header">
+                <h3>
+                  Interview Questions for Volunteers and How to Answer Them
+                </h3>
+              </div>
+              <div class="blog-item-details">
+                <div class="blog-item-details-date">
+                  <span
+                    ><i class="fa-solid fa-calendar-check"></i> September 7,
+                    2022</span
+                  >
+                </div>
+                <div class="blog-item-details-tags">
+                  <span>Tags</span>
+                  <span>People</span>
+                  <span>Qause</span>
+                  <span>NGO</span>
+                </div>
+              </div>
+              <div class="blog-item-message">
+                <p>
+                  Interviewing for a volunteering position is essential for both
+                  parties. It enables more clarity about passion, interests, and
+                  skills that candidates may provide to the organization or
+                  receive from it. This guide will take you through these
+                  essentials. 1. Why do you want to volunteer at an NGO? Your
+                  answer ...
+                </p>
+              </div>
+            </div>
+            
+            <div class="blog-item">
+              <div class="blog-item-image">
+                <img
+                  src="./assets//pexels-liza-summer-6348129-683x1024.jpg"
+                  alt="volunteer"
+                  class="img img-fluid"
+                />
+              </div>
+              <div class="blog-item-header">
+                <h3>
+                  Interview Questions for Volunteers and How to Answer Them
+                </h3>
+              </div>
+              <div class="blog-item-details">
+                <div class="blog-item-details-date">
+                  <span
+                    ><i class="fa-solid fa-calendar-check"></i> September 7,
+                    2022</span
+                  >
+                </div>
+                <div class="blog-item-details-tags">
+                  <span>Tags</span>
+                  <span>People</span>
+                  <span>Qause</span>
+                  <span>NGO</span>
+                </div>
+              </div>
+              <div class="blog-item-message">
+                <p>
+                  Interviewing for a volunteering position is essential for both
+                  parties. It enables more clarity about passion, interests, and
+                  skills that candidates may provide to the organization or
+                  receive from it. This guide will take you through these
+                  essentials. 1. Why do you want to volunteer at an NGO? Your
+                  answer ...
+                </p>
+              </div>
+            </div>
+    
+            <div class="blog-item">
+              <div class="blog-item-image">
+                <img
+                  src="./assets//pexels-liza-summer-6348129-683x1024.jpg"
+                  alt="volunteer"
+                  class="img img-fluid"
+                />
+              </div>
+              <div class="blog-item-header">
+                <h3>
+                  Interview Questions for Volunteers and How to Answer Them
+                </h3>
+              </div>
+              <div class="blog-item-details">
+                <div class="blog-item-details-date">
+                  <span
+                    ><i class="fa-solid fa-calendar-check"></i> September 7,
+                    2022</span
+                  >
+                </div>
+                <div class="blog-item-details-tags">
+                  <span>Tags</span>
+                  <span>People</span>
+                  <span>Qause</span>
+                  <span>NGO</span>
+                </div>
+              </div>
+              <div class="blog-item-message">
+                <p>
+                  Interviewing for a volunteering position is essential for both
+                  parties. It enables more clarity about passion, interests, and
+                  skills that candidates may provide to the organization or
+                  receive from it. This guide will take you through these
+                  essentials. 1. Why do you want to volunteer at an NGO? Your
+                  answer ...
+                </p>
+              </div>
+            </div>
+            
+            <div class="blog-item">
+              <div class="blog-item-image">
+                <img
+                  src="./assets//pexels-liza-summer-6348129-683x1024.jpg"
+                  alt="volunteer"
+                  class="img img-fluid"
+                />
+              </div>
+              <div class="blog-item-header">
+                <h3>
+                  Interview Questions for Volunteers and How to Answer Them
+                </h3>
+              </div>
+              <div class="blog-item-details">
+                <div class="blog-item-details-date">
+                  <span
+                    ><i class="fa-solid fa-calendar-check"></i> September 7,
+                    2022</span
+                  >
+                </div>
+                <div class="blog-item-details-tags">
+                  <span>Tags</span>
+                  <span>People</span>
+                  <span>Qause</span>
+                  <span>NGO</span>
+                </div>
+              </div>
+              <div class="blog-item-message">
+                <p>
+                  Interviewing for a volunteering position is essential for both
+                  parties. It enables more clarity about passion, interests, and
+                  skills that candidates may provide to the organization or
+                  receive from it. This guide will take you through these
+                  essentials. 1. Why do you want to volunteer at an NGO? Your
+                  answer ...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="blog-navigation col-12">
+            <div class="carousel-arrows">
+              <i class="fa-solid fa-circle-arrow-left"></i>
+              <i class="fa-solid fa-circle-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </section> -->
     </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-image">
+          <img
+          class="img img-fluid"
+            src="./assets/footer-children-img.png"
+            alt="footer children image"
+          />
+        </div>
+        <div class="footer-content row">
+          <div class="footer-content-address col-md-4 col-6">
+            <div class="footer-content-address-email">
+              <h3>Email</h3>
+              <p class="coloured">support@qause.com</p>
+            </div>
+            <div class="footer-content-address-info">
+              <h3>Address</h3>
+              <p>
+                Mindism Tech Pvt. Ltd. <br />
+                30, Arjun Marg, DLF Phase-1, Gurgaon, Haryana.
+              </p>
+            </div>
+          </div>
+          <div class="footer-content-social col-md-4 col-6">
+            <div class="social-icons">
+              <h3>Follow Us</h3>
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="social-quick-links">
+              <h3>Quick links</h3>
+              <ul>
+                <li class="coloured">Home</li>
+                <li class="coloured">About Us</li>
+                <li class="coloured">Blogs</li>
+                <li class="coloured">Grants</li>
+                <li class="coloured">Frequently Asked Questions</li>
+                <li class="coloured">Privacy Policy</li>
+                <li class="coloured">Terms and Conditions</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-info col-md-4 col-12">
+            
+
+                <img
+                src="./assets/footer-logo.png"
+                alt="footer logo"
+                class="img img-fluid "
+              />
+              <p class="">
+                Qause aims to strengthen the social sector by providing a
+                digital experience to non profits volunteers and donors. Our
+                vision is to give digital experience to nonprofits to help them
+                access ample volunteer talent and raise funds for their causes.
+                We serve with passion!
+              </p>
+              <p class="copyrights">
+                <i class="fa-solid fa-copyright"></i>2022 - Qause India
+              </p>
+
+              
+          
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
 
     <!-- Including bootstrap script -->
     <script

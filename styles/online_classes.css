@@ -29,3 +29,25 @@
     color: #302f2f;
     font-size: 1.5rem;
 }
+
+@media screen and (max-width:768px) {
+    .online-classes-content p{
+        font-size: 1.5rem;
+        
+    }
+    .online-classes-grid-container{
+        margin: 0.5rem;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    .online-classes-content{
+        align-items: center;
+        text-align: center;
+    }
+    .online-classes-image{
+        margin-top: 2rem;
+    }
+    
+}
