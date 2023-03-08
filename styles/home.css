@@ -26,7 +26,6 @@
 .home-section-content-text{
     font-size: 26px;
     color: var(--color-yellow);
-    /* margin-bottom: 1rem; */
 }
 .home-section-content-text p{
     margin: 0;
@@ -61,7 +60,6 @@
     align-items: center;
     color: #fff;
     font-size: 1rem;
-    /* font-family: sans-serif !important; */
 }
 
 @media  screen and (max-width:768px) {

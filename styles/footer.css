@@ -24,8 +24,6 @@ footer{
     overflow: hidden;
     position: absolute;
     top: 50%;
-    /* right: 0; */
-    /* left: 0; */
     border-top-right-radius: 40px;
     z-index: 2;
     margin: 0;

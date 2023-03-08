@@ -1,5 +1,6 @@
+// Activating strict mode
 "use strict";
-// import Swiper from Swiper/bundle
+
 
 // selecting elements
 
@@ -26,32 +27,48 @@ hamburger.addEventListener("click", () => {
 window.addEventListener("scroll", () => {
   if (Math.floor(homeSection.getBoundingClientRect().y) < -420) {
     partialSearchBar.classList.remove("hidden");
-    // homeSectionInput.style.display='none'
   } else {
     partialSearchBar.classList.add("hidden");
-    // homeSectionInput.style.display='block'
   }
   console.log(homeSection.getBoundingClientRect());
 });
 
 // implementing swiper functionality
-const swiper = new Swiper('.swiper', {
-    
-  
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
+let blogSwiper = new Swiper(".slide-content", {
+  slidesPerView: 3,
+  spaceBetween: 25,
+  centerSlide: 'true',
+  fade: 'true',
+  grabCursor: 'true',
+  navigation: {
+    nextEl: ".next-blog",
+    prevEl: ".prev-blog",
   },
 
+  breakpoints:{
+      0: {
+          slidesPerView: 1,
+      },
+      520: {
+          slidesPerView: 2,
+      },
+      950: {
+          slidesPerView: 3,
+      },
+  },
+});
+
+
+
+const mediaSwiper = new Swiper('.media-coverage2-content', {
+    
   // Navigation arrows
   navigation: {
     nextEl: '.next',
     prevEl: '.prev',
   },
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
 });
+
+
 
